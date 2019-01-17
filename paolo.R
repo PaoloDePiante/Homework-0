@@ -25,7 +25,7 @@ dim(train_set)[1]
 
 y_hat <- sample(c("Male", "Female"), length(test_index), replace = TRUE)
 
-# ha estratto in totale 525 tra Male e Female (abbiamo tirato a indovinare il sesso)
+# ha estratto in totale 525 tra Male e Female (abbiamo tirato a indovinare il sesso )
 # in ML le categorie devo essere fattori cosi trasformiamo la Y in FATTORE
 
 y_hat <- sample(c("Male", "Female"), length(test_index), replace = TRUE) %>% factor(levels = levels(test_set$sex))
