@@ -53,10 +53,12 @@ accuracy <- map_dbl(cutoff, function(x){
   mean(y_hat == train_set$sex)
 })
 
+
+
 plot(cutoff, accuracy)
 lines(cutoff, accuracy)
 
-max(accuracy)
+max(accuracy) 
 
 best_cutoff <- cutoff[which.max(accuracy)]
 best_cutoff
